@@ -1,0 +1,115 @@
+.text {
+  display: flex;
+  flex-wrap: wrap;
+
+  &_align {
+    &_center {
+      justify-content: center;
+    }
+  }
+
+  &_size {
+    &_s {
+      --word-width--s: 2rem;
+      --word-width--m: 4.8rem;
+      --word-width--l: 10rem;
+
+      --word-height: 0.8rem;
+      --line-space: var(--line-space--s);
+    }
+
+    &_m {
+      --word-width--s: 2.4rem;
+      --word-width--m: 5.6rem;
+      --word-width--l: 11.4rem;
+
+      --word-height: 1rem;
+      --line-space: var(--line-space--m);
+    }
+
+    &_l {
+      --word-width--s: 2.8rem;
+      --word-width--m: 6.8rem;
+      --word-width--l: 13.8rem;
+
+      --word-height: 1.1rem;
+      --line-space: var(--line-space--l);
+    }
+
+    &_xl {
+      --word-width--s: 3.2rem;
+      --word-width--m: 7.4rem;
+      --word-width--l: 15.4rem;
+
+      --word-height: 1.3rem;
+      --line-space: var(--line-space--xl);
+    }
+
+    &_xxl {
+      --word-width--s: 3.6rem;
+      --word-width--m: 8.8rem;
+      --word-width--l: 18.4rem;
+
+      --word-height: 1.6rem;
+      --line-space: var(--line-space--xxl);
+    }
+  }
+
+  &_type {
+    &_h1 {
+      margin: 1.8rem 0 2.4rem;
+    }
+
+    &_h2 {
+      margin: 4.5rem 0 2.1rem;
+    }
+
+    &_h3 {
+      margin: 4.2rem 0 0;
+    }
+
+    &_p {
+      margin: 1.5rem 0 2.1rem;
+    }
+  }
+
+  &_view {
+    &_primary {
+      --text-view: var(--text-color--primary);
+    }
+
+    &_secondary {
+      --text-view: var(--text-color--secondary);
+    }
+
+    &_ghost {
+      --text-view: var(--text-color--tertiary);
+    }
+
+    &_link {
+      --text-view: var(--text-color--link);
+    }
+  }
+
+  &__word {
+    margin-top: calc((var(--line-space) - var(--word-height)) / 2);
+    margin-bottom: calc((var(--line-space) - var(--word-height)) / 2);
+
+    background: var(--text-view);
+    height: var(--word-height);
+
+    &_width {
+      &_s {
+        width: var(--word-width--s);
+      }
+
+      &_m {
+        width: var(--word-width--m);
+      }
+
+      &_l {
+        width: var(--word-width--l);
+      }
+    }
+  }
+}

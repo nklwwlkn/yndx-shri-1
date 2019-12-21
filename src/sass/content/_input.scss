@@ -1,0 +1,22 @@
+.input {
+  border: 0.3rem solid var(--border-color);
+  width: 100%;
+
+  &_size {
+    &_s {
+      height: 2.4rem;
+    }
+    &_m {
+      height: 3.2rem;
+    }
+    &_l {
+      height: 4.2rem;
+    }
+    &_xl {
+      height: 5.6rem;
+    }
+    &_xxl {
+      height: 6.4rem;
+    }
+  }
+}

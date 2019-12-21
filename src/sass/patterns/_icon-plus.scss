@@ -1,0 +1,26 @@
+.icon-plus {
+  display: grid;
+  grid-auto-flow: column;
+
+  &_vertical-align {
+    &_center {
+      align-items: center;
+    }
+  }
+
+  &__icon {
+    &_indent-r {
+      &_s {
+        margin-right: var(--gap--s);
+      }
+
+      &_m {
+        margin-right: var(--gap--m);
+      }
+    }
+
+    &_indent-l {
+      margin-left: var(--gap--l);
+    }
+  }
+}

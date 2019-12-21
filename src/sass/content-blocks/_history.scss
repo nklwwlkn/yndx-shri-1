@@ -1,0 +1,65 @@
+.history {
+  display: grid;
+  border: 3px solid var(--border-color);
+
+  &__transaction {
+    height: 9.85rem;
+    display: grid;
+    align-items: center;
+    align-content: center;
+  }
+
+  &__show {
+    display: grid;
+    grid-template-columns: auto 2fr;
+    margin-top: 0px;
+  }
+
+  &__destination {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto 1fr;
+  }
+
+  &__label {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    justify-items: center;
+  }
+
+  &__description {
+    display: grid;
+    justify-content: start;
+    grid-auto-flow: row;
+  }
+
+  &__actions {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+  }
+
+  &__details {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 7.2rem auto;
+  }
+
+  &__time {
+    display: grid;
+    align-items: center;
+    height: 100%;
+    padding: 14px 0;
+  }
+
+  &__quantity {
+    display: grid;
+    justify-content: end;
+    align-items: center;
+  }
+
+  .e-accordion__more {
+    display: none;
+  }
+}

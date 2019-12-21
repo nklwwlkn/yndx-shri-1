@@ -1,0 +1,17 @@
+.onoffswitch {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+
+  width: 9.7rem;
+  height: 3.2rem;
+
+  border: 0.3rem solid var(--border-color);
+
+  &__button {
+    background: var(--border-color);
+    width: 2.4rem;
+    height: 2.4rem;
+    margin-right: 1px;
+  }
+}

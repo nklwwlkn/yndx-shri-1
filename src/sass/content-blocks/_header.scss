@@ -1,0 +1,20 @@
+.header {
+  display: flex;
+  justify-content: center;
+
+  margin-top: var(--gap--xxxl);
+  margin-bottom: var(--gap--xxxl);
+
+  &__content {
+    max-width: 128rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    width: 17.9rem;
+    height: 3.4rem;
+    background: var(--text-color--primary);
+  }
+}

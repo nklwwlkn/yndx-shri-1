@@ -1,0 +1,69 @@
+.grid {
+  display: grid;
+
+  &_m-columns {
+    &_12 {
+      grid-template-columns: repeat(var(--grid-template-columns--12), 1fr);
+
+      @media (max-width: 700px) {
+        grid-template-columns: var(--grid-template-columns--mobile);
+      }
+    }
+
+    &_10 {
+      grid-template-columns: repeat(var(--grid-template-columns--10), 1fr);
+
+      @media (max-width: 700px) {
+        grid-template-columns: var(--grid-template-columns--mobile);
+      }
+    }
+  }
+
+  &_col-gap {
+    &_two-thirds {
+      grid-column-gap: calc(var(--gap) / 3);
+    }
+
+    &_full {
+      grid-column-gap: var(--gap);
+    }
+
+    &_half {
+      grid-column-gap: calc(var(--gap) / 2);
+    }
+  }
+
+  &_row-gap {
+    &_half {
+      grid-row-gap: calc(var(--gap) / 2);
+    }
+
+    &_full {
+      grid-row-gap: var(--gap);
+    }
+  }
+
+  &__fraction {
+    &_m-col {
+      &_2 {
+        grid-column: span 2;
+      }
+
+      &_3 {
+        grid-column: span 3;
+      }
+
+      &_4 {
+        grid-column: span 4;
+      }
+
+      &_5 {
+        grid-column: span 5;
+      }
+
+      &_8 {
+        grid-column: span 8;
+      }
+    }
+  }
+}

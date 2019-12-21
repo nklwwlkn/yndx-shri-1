@@ -1,0 +1,33 @@
+.button {
+  justify-items: right;
+  width: 20rem;
+  background: var(--bg-color--accent);
+
+  &_size {
+    &_s {
+      height: 2.4rem;
+    }
+
+    &_m {
+      height: 3.2rem;
+    }
+
+    &_l {
+      height: 4.2rem;
+    }
+
+    &_xl {
+      height: 5.6rem;
+    }
+
+    &_xxl {
+      height: 6.4rem;
+    }
+  }
+
+  &_width {
+    &_full {
+      width: 100%;
+    }
+  }
+}

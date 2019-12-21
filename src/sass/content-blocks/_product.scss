@@ -1,0 +1,26 @@
+.product {
+  min-height: 30rem;
+  border: 0.3rem solid var(--border-color);
+
+  & .image {
+    height: 16rem;
+    background-color: var(--bg-color--default);
+    border: 0.3rem solid var(--border-color);
+  }
+
+  &__content {
+    justify-content: center;
+    align-items: center;
+    padding: var(--gap--m);
+  }
+
+  &__title {
+    margin-bottom: var(--gap--xxxxl);
+  }
+
+  &__foorer {
+    position: absolute;
+    bottom: 0;
+    padding: var(--gap--m);
+  }
+}

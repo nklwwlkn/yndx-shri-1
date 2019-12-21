@@ -1,0 +1,9 @@
+.image {
+  height: 100%;
+  width: 100%;
+  border: 0.3rem solid var(--bg-color--default);
+  background-image: var(--image-stub);
+  background-position: center;
+  background-repeat: no-repeat;
+  min-width: 200px;
+}

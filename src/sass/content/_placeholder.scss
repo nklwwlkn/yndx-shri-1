@@ -1,0 +1,14 @@
+.placeholder {
+  &_size {
+    &_m {
+      width: 7.2rem;
+      height: 7.2rem;
+    }
+  }
+
+  &_view {
+    &_primary {
+      background: var(--text-color--primary);
+    }
+  }
+}

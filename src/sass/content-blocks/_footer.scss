@@ -1,0 +1,14 @@
+.footer {
+  display: flex;
+  justify-content: center;
+
+  margin-top: var(--gap--xxxl);
+  margin-bottom: var(--gap--xxxl);
+
+  &__content {
+    max-width: 128rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,106 @@
+.theme {
+  display: grid;
+  justify-content: unset;
+
+  --grid-template-columns--12: 12;
+  --grid-template-columns--10: 10;
+  --grid-template-columns--mobile: 1;
+
+  &_color {
+    &_project {
+      &-default {
+        --bg-color--default: #ffffff;
+        --bg-color--accent: #ffcc00;
+        --border-color: #000000;
+
+        --text-color--primary: #000000;
+        --text-color--secondary: rgba(0, 0, 0, 0.6);
+        --text-color--tertiary: rgba(0, 0, 0, 0.3);
+        --text-color--link: #0077ff;
+
+        --image-stub: url("./image-placeholder-primary.svg");
+      }
+
+      &-brand {
+        --bg-color--default: #0077ff;
+        --bg-color--accent: #ffffff;
+        --border-color: #ffffff;
+
+        --text-color--primary: #ffffff;
+        --text-color--secondary: rgba(255, 255, 255, 0.6);
+        --text-color--tertiary: rgba(255, 255, 255, 0.3);
+        --text-color--link: #ffffff;
+
+        --image-stub: url("./image-placeholder-inverse.svg");
+      }
+
+      &-inverse {
+        --bg-color--default: #000000;
+        --bg-color--accent: #ffffff;
+        --border-color: #ffffff;
+
+        --text-color--primary: #ffffff;
+        --text-color--secondary: rgba(255, 255, 255, 0.6);
+        --text-color--tertiary: rgba(255, 255, 255, 0.3);
+        --text-color--link: #0077ff;
+
+        --image-stub: url("./image-placeholder-inverse.svg");
+      }
+
+      &-warning {
+        --bg-color--default: #ff3333;
+        --bg-color--accent: #ffffff;
+        --border-color: #ff3333;
+
+        --text-color--primary: #ffffff;
+        --text-color--secondary: rgba(255, 255, 255, 0.6);
+        --text-color--tertiary: rgba(255, 255, 255, 0.3);
+        --text-color--link: #fff;
+      }
+    }
+  }
+
+  &_size {
+    &_default {
+      --gap: var(--gap--xl);
+
+      --text-size--s: 0.8rem;
+      --text-size--m: 1rem;
+      --text-size--l: 1.1rem;
+      --text-size--xl: 1.3rem;
+      --text-size--xxl: 1.6rem;
+
+      --line-space--s: 2.1rem;
+      --line-space--m: 2.5rem;
+      --line-space--l: 2.8rem;
+      --line-space--xl: 3.4rem;
+      --line-space--xxl: 3.8rem;
+    }
+  }
+
+  &_space {
+    &_default {
+      --gap--xxxs: 0.3rem;
+      --gap--xxs: 0.6rem;
+      --gap--xs: 0.9rem;
+      --gap--s: 1.5rem;
+      --gap--m: 1.8rem;
+      --gap--l: 2.4rem;
+      --gap--xl: 2.7rem;
+      --gap--xxl: 3.6rem;
+      --gap--xxxl: 4.5rem;
+      --gap--xxxxl: 5.1rem;
+      --gap--xxxxxl: 7.2rem;
+    }
+  }
+
+  &_gap {
+    &_small {
+      --gap: var(--gap--xl);
+
+      @media (max-width: 64em) {
+        --gap: var(--gap--s);
+      }
+    }
+  }
+}

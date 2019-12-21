@@ -1,0 +1,25 @@
+{
+  "name": "yndx-shri-task-1",
+  "version": "1.0.0",
+  "description": "Yandex SHRI task 1 by nklwwlkn",
+  "main": "index.js",
+  "scripts": {
+    "live-index": "live-server --host=localhost --open=index --port=3000",
+    "live-product": "live-server --host=localhost --open=index --port=3000",
+    "watch:sass": "node-sass src/sass/main.scss build/style.css -w",
+    "compile:sass": "node-sass src/sass/main.scss src/css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" src/css/style.comp.css -o src/css/style.prefix.css",
+    "compress:css": "node-sass src/css/style.prefix.css build/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css",
+    "start": "npm-run-all --parallel live-index watch:sass"
+  },
+  "author": "Aleksei Nepochatykh",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.7.3",
+    "concat": "^1.0.3",
+    "node-sass": "^4.13.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^6.1.3"
+  }
+}

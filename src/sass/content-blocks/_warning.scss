@@ -1,0 +1,25 @@
+.warning {
+  height: 100%;
+  min-height: 33.5rem;
+
+  background: var(--bg-color--default);
+
+  border: 0.3rem solid var(--border-color);
+
+  &__content {
+    justify-items: center;
+
+    padding: var(--gap--xxl);
+  }
+
+  &__button-wrapper {
+    align-items: end;
+
+    padding: var(--gap--xl);
+  }
+
+  .placeholder {
+    margin-top: var(--gap--m);
+    margin-bottom: var(--gap--m);
+  }
+}

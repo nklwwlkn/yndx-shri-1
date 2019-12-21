@@ -1,0 +1,10 @@
+.avatar {
+  background: var(--text-color--primary);
+
+  &_size {
+    &_m {
+      width: 6rem;
+      height: 6rem;
+    }
+  }
+}
