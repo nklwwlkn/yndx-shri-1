@@ -28,7 +28,7 @@ body {
     --text-color--secondary: rgba(0, 0, 0, 0.6);
     --text-color--tertiary: rgba(0, 0, 0, 0.3);
     --text-color--link: #0077ff;
-    --image-stub: url("../img/image-placeholder-primary.svg"); }
+    --image-stub: url("./image-placeholder-primary.svg"); }
   .theme_color_project-brand {
     --bg-color--default: #0077ff;
     --bg-color--accent: #ffffff;
@@ -37,7 +37,7 @@ body {
     --text-color--secondary: rgba(255, 255, 255, 0.6);
     --text-color--tertiary: rgba(255, 255, 255, 0.3);
     --text-color--link: #ffffff;
-    --image-stub: url("../img/image-placeholder-inverse.svg"); }
+    --image-stub: url("./image-placeholder-inverse.svg"); }
   .theme_color_project-inverse {
     --bg-color--default: #000000;
     --bg-color--accent: #ffffff;
@@ -46,7 +46,7 @@ body {
     --text-color--secondary: rgba(255, 255, 255, 0.6);
     --text-color--tertiary: rgba(255, 255, 255, 0.3);
     --text-color--link: #0077ff;
-    --image-stub: url("../img/image-placeholder-inverse.svg"); }
+    --image-stub: url("./image-placeholder-inverse.svg"); }
   .theme_color_project-warning {
     --bg-color--default: #ff3333;
     --bg-color--accent: #ffffff;
@@ -564,6 +564,10 @@ body {
     .text__word_width_l {
       width: var(--word-width--l); }
 
+.grid__fraction_m-col_8 .text_size_m {
+  position: relative;
+  bottom: 1px; }
+
 /* content-blocks: */
 .cover {
   min-height: 47.2rem;
@@ -572,10 +576,12 @@ body {
     width: 100%; }
   .cover__preview {
     margin-bottom: var(--gap--l);
+    padding-bottom: 1px;
     width: 100%; }
   .cover__preview .image {
     height: 18rem;
-    border: 0.3rem solid var(--border-color); }
+    border: 0.3rem solid var(--border-color);
+    padding-bottom: 1px; }
   .cover__footer {
     width: 100%; }
 
@@ -703,7 +709,9 @@ body {
     align-items: center;
     padding: var(--gap--m); }
   .product__title {
-    margin-bottom: var(--gap--xxxxl); }
+    position: relative;
+    bottom: 2px;
+    margin-bottom: var(--gap--xxxl); }
   .product__footer {
     position: absolute;
     bottom: 0;
@@ -711,6 +719,18 @@ body {
     .product__footer .text_size_s {
       position: relative;
       top: 1px; }
+
+.layout__container {
+  /* .product__title {
+    padding-bottom: var(--gap--xxxl);
+  } */
+  /* .section_space-v_xxxxl {
+    padding-bottom: var(--gap--xxxl);
+  } */
+  /* .product {
+    position: relative;
+    bottom: 6px;
+  } */ }
 
 .warning {
   display: grid;

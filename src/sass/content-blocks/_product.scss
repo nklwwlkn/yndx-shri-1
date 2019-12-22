@@ -16,7 +16,9 @@
   }
 
   &__title {
-    margin-bottom: var(--gap--xxxxl);
+    position: relative;
+    bottom: 2px;
+    margin-bottom: var(--gap--xxxl);
   }
 
   &__footer {
@@ -29,4 +31,18 @@
       top: 1px;
     }
   }
+}
+
+.layout__container {
+  /* .product__title {
+    padding-bottom: var(--gap--xxxl);
+  } */
+  /* .section_space-v_xxxxl {
+    padding-bottom: var(--gap--xxxl);
+  } */
+
+  /* .product {
+    position: relative;
+    bottom: 6px;
+  } */
 }
