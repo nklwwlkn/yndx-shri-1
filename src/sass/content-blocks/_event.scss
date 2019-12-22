@@ -22,4 +22,10 @@
   &__title {
     margin-bottom: var(--gap--s);
   }
+
+  &__description {
+    .text_size_l {
+      --word-height: 1.2rem;
+    }
+  }
 }

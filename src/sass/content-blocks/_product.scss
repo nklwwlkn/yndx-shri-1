@@ -19,9 +19,13 @@
     margin-bottom: var(--gap--xxxxl);
   }
 
-  &__foorer {
+  &__footer {
     position: absolute;
     bottom: 0;
     padding: var(--gap--m);
+
+    .text_size_s {
+      --word-height: 0.9rem;
+    }
   }
 }

@@ -590,6 +590,8 @@ body {
       margin-left: calc(var(--gap--xs) / 2); }
   .event__title {
     margin-bottom: var(--gap--s); }
+  .event__description .text_size_l {
+    --word-height: 1.2rem; }
 
 .footer {
   display: flex;
@@ -692,10 +694,12 @@ body {
     padding: var(--gap--m); }
   .product__title {
     margin-bottom: var(--gap--xxxxl); }
-  .product__foorer {
+  .product__footer {
     position: absolute;
     bottom: 0;
     padding: var(--gap--m); }
+    .product__footer .text_size_s {
+      --word-height: 0.9rem; }
 
 .warning {
   display: grid;
