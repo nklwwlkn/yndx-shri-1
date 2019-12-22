@@ -56,7 +56,6 @@ body {
     --text-color--tertiary: rgba(255, 255, 255, 0.3);
     --text-color--link: #fff; }
   .theme_size_default {
-    --gap: var(--gap--xl);
     --text-size--s: 0.8rem;
     --text-size--m: 1rem;
     --text-size--l: 1.1rem;
@@ -68,6 +67,7 @@ body {
     --line-space--xl: 3.4rem;
     --line-space--xxl: 3.8rem; }
   .theme_space_default {
+    --gap: var(--gap--xl);
     --gap--xxxs: 0.3rem;
     --gap--xxs: 0.6rem;
     --gap--xs: 0.9rem;
@@ -80,10 +80,10 @@ body {
     --gap--xxxxl: 5.1rem;
     --gap--xxxxxl: 7.2rem; }
   .theme_gap_small {
-    --gap: var(--gap--xl); }
-    @media (max-width: 64em) {
-      .theme_gap_small {
-        --gap: var(--gap--s); } }
+    /* --gap: var(--gap--xl); */
+    /* @media (max-width: 64em) {
+        --gap: var(--gap--s);
+      } */ }
 
 /* frame: */
 .layout {
@@ -114,12 +114,12 @@ body {
   display: grid; }
   .grid_m-columns_12 {
     grid-template-columns: repeat(var(--grid-template-columns--12), 1fr); }
-    @media (max-width: 700px) {
+    @media (max-width: 1280px) {
       .grid_m-columns_12 {
         grid-template-columns: var(--grid-template-columns--mobile); } }
   .grid_m-columns_10 {
     grid-template-columns: repeat(var(--grid-template-columns--10), 1fr); }
-    @media (max-width: 700px) {
+    @media (max-width: 1280px) {
       .grid_m-columns_10 {
         grid-template-columns: var(--grid-template-columns--mobile); } }
   .grid_col-gap_two-thirds {
@@ -312,7 +312,7 @@ body {
 
 .form__control {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   flex-grow: 2; }
 
 .icon-plus {
@@ -467,6 +467,9 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   min-width: 200px; }
+  @media (max-width: 900px) {
+    .image {
+      min-width: 100%; } }
 
 .input {
   border: 0.3rem solid var(--border-color);
@@ -511,19 +514,25 @@ body {
     --word-width--m: 6.8rem;
     --word-width--l: 13.8rem;
     --word-height: 1.1rem;
-    --line-space: var(--line-space--l); }
+    --line-space: var(--line-space--l);
+    position: relative;
+    bottom: 2px; }
   .text_size_xl {
     --word-width--s: 3.2rem;
     --word-width--m: 7.4rem;
     --word-width--l: 15.4rem;
     --word-height: 1.3rem;
-    --line-space: var(--line-space--xl); }
+    --line-space: var(--line-space--xl);
+    position: relative;
+    bottom: 4px; }
   .text_size_xxl {
     --word-width--s: 3.6rem;
     --word-width--m: 8.8rem;
     --word-width--l: 18.4rem;
     --word-height: 1.6rem;
-    --line-space: var(--line-space--xxl); }
+    --line-space: var(--line-space--xxl);
+    position: relative;
+    bottom: 4px; }
   .text_type_h1 {
     margin: 1.8rem 0 2.4rem; }
   .text_type_h2 {
@@ -612,11 +621,14 @@ body {
   display: grid;
   border: 3px solid var(--border-color); }
   .history__transaction {
-    height: 9.85rem;
+    /* height: 9.85rem; */
     display: grid;
     align-items: center;
     align-content: center; }
   .history__show {
+    height: 60px;
+    position: relative;
+    bottom: 5px;
     display: grid;
     grid-template-columns: auto 2fr;
     margin-top: 0px; }
@@ -656,15 +668,15 @@ body {
 .onoffswitch {
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
   width: 9.7rem;
   height: 3.2rem;
-  border: 0.3rem solid var(--border-color); }
+  border: 0.2rem solid var(--border-color); }
   .onoffswitch__button {
     background: var(--border-color);
     width: 2.4rem;
     height: 2.4rem;
-    margin-right: 1px; }
+    margin-right: 2px; }
 
 .product {
   min-height: 30rem;
@@ -672,8 +684,9 @@ body {
   .product .image {
     height: 16rem;
     background-color: var(--bg-color--default);
-    border: 0.3rem solid var(--border-color); }
+    border: 0.3rem solid var(--bg-color--default); }
   .product__content {
+    width: 100%;
     justify-content: center;
     align-items: center;
     padding: var(--gap--m); }
@@ -685,12 +698,15 @@ body {
     padding: var(--gap--m); }
 
 .warning {
+  display: grid;
+  align-items: self-start;
   height: 100%;
   min-height: 33.5rem;
   background: var(--bg-color--default);
   border: 0.3rem solid var(--border-color); }
   .warning__content {
     justify-items: center;
+    align-items: center;
     padding: var(--gap--xxl); }
   .warning__button-wrapper {
     align-items: end;

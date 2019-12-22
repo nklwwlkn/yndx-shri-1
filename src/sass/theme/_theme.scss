@@ -62,8 +62,6 @@
 
   &_size {
     &_default {
-      --gap: var(--gap--xl);
-
       --text-size--s: 0.8rem;
       --text-size--m: 1rem;
       --text-size--l: 1.1rem;
@@ -80,6 +78,8 @@
 
   &_space {
     &_default {
+      --gap: var(--gap--xl);
+
       --gap--xxxs: 0.3rem;
       --gap--xxs: 0.6rem;
       --gap--xs: 0.9rem;
@@ -96,11 +96,11 @@
 
   &_gap {
     &_small {
-      --gap: var(--gap--xl);
+      /* --gap: var(--gap--xl); */
 
-      @media (max-width: 64em) {
+      /* @media (max-width: 64em) {
         --gap: var(--gap--s);
-      }
+      } */
     }
   }
 }

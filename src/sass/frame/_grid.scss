@@ -5,7 +5,7 @@
     &_12 {
       grid-template-columns: repeat(var(--grid-template-columns--12), 1fr);
 
-      @media (max-width: 700px) {
+      @media (max-width: 1280px) {
         grid-template-columns: var(--grid-template-columns--mobile);
       }
     }
@@ -13,7 +13,7 @@
     &_10 {
       grid-template-columns: repeat(var(--grid-template-columns--10), 1fr);
 
-      @media (max-width: 700px) {
+      @media (max-width: 1280px) {
         grid-template-columns: var(--grid-template-columns--mobile);
       }
     }

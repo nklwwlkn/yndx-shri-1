@@ -6,7 +6,7 @@
   "scripts": {
     "live-index": "live-server --host=localhost --open=index --port=3000",
     "live-product": "live-server --host=localhost --open=index --port=3000",
-    "watch:sass": "node-sass src/sass/main.scss build/style.css -w",
+    "watch:sass": "node-sass src/sass/main.scss stub/build/style.css -w",
     "compile:sass": "node-sass src/sass/main.scss src/css/style.comp.css",
     "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" src/css/style.comp.css -o src/css/style.prefix.css",
     "compress:css": "node-sass src/css/style.prefix.css build/style.css --output-style compressed",

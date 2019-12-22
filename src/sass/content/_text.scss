@@ -34,6 +34,9 @@
 
       --word-height: 1.1rem;
       --line-space: var(--line-space--l);
+
+      position: relative;
+      bottom: 2px;
     }
 
     &_xl {
@@ -43,6 +46,9 @@
 
       --word-height: 1.3rem;
       --line-space: var(--line-space--xl);
+
+      position: relative;
+      bottom: 4px;
     }
 
     &_xxl {
@@ -52,6 +58,9 @@
 
       --word-height: 1.6rem;
       --line-space: var(--line-space--xxl);
+
+      position: relative;
+      bottom: 4px;
     }
   }
 

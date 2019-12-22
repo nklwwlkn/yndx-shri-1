@@ -5,10 +5,11 @@
   & .image {
     height: 16rem;
     background-color: var(--bg-color--default);
-    border: 0.3rem solid var(--border-color);
+    border: 0.3rem solid var(--bg-color--default);
   }
 
   &__content {
+    width: 100%;
     justify-content: center;
     align-items: center;
     padding: var(--gap--m);
