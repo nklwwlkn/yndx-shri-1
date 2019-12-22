@@ -23,6 +23,11 @@
     align-items: end;
     margin-top: 2px;
     padding: var(--gap--xl);
+
+    @media (max-width: 1024px) {
+      position: relative;
+      top: 8px;
+    }
   }
 
   .placeholder {
