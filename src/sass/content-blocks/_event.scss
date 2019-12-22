@@ -20,6 +20,13 @@
   }
 
   &__title {
+    position: relative;
+    top: 1px;
     margin-bottom: var(--gap--s);
+  }
+
+  &__description {
+    position: relative;
+    top: 1px;
   }
 }

@@ -12,11 +12,16 @@
     justify-items: center;
     align-items: center;
     padding: var(--gap--xxl);
+
+    .text {
+      margin-top: 2px;
+      --word-height: 12px;
+    }
   }
 
   &__button-wrapper {
     align-items: end;
-
+    margin-top: 2px;
     padding: var(--gap--xl);
   }
 
