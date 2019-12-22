@@ -25,7 +25,9 @@
 
   &__description {
     .text_size_l {
-      --word-height: 1.2rem;
+      --word-height: 1rem;
+      position: relative;
+      
     }
   }
 }
