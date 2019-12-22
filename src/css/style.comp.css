@@ -467,6 +467,9 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   min-width: 200px; }
+  @media (max-width: 900px) {
+    .image {
+      min-width: 100%; } }
 
 .input {
   border: 0.3rem solid var(--border-color);
@@ -656,7 +659,7 @@ body {
 .onoffswitch {
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
   width: 9.7rem;
   height: 3.2rem;
   border: 0.2rem solid var(--border-color); }
@@ -674,6 +677,7 @@ body {
     background-color: var(--bg-color--default);
     border: 0.3rem solid var(--bg-color--default); }
   .product__content {
+    width: 100%;
     justify-content: center;
     align-items: center;
     padding: var(--gap--m); }
