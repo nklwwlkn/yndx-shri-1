@@ -67,10 +67,16 @@
   &_type {
     &_h1 {
       margin: 1.8rem 0 2.4rem;
+
+      position: relative;
+      bottom: 3px;
     }
 
     &_h2 {
       margin: 4.5rem 0 2.1rem;
+
+      position: relative;
+      bottom: 2px;
     }
 
     &_h3 {

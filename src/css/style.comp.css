@@ -28,7 +28,7 @@ body {
     --text-color--secondary: rgba(0, 0, 0, 0.6);
     --text-color--tertiary: rgba(0, 0, 0, 0.3);
     --text-color--link: #0077ff;
-    --image-stub: url("./image-placeholder-primary.svg"); }
+    --image-stub: url("../img/image-placeholder-primary.svg"); }
   .theme_color_project-brand {
     --bg-color--default: #0077ff;
     --bg-color--accent: #ffffff;
@@ -37,7 +37,7 @@ body {
     --text-color--secondary: rgba(255, 255, 255, 0.6);
     --text-color--tertiary: rgba(255, 255, 255, 0.3);
     --text-color--link: #ffffff;
-    --image-stub: url("./image-placeholder-inverse.svg"); }
+    --image-stub: url("../img/image-placeholder-inverse.svg"); }
   .theme_color_project-inverse {
     --bg-color--default: #000000;
     --bg-color--accent: #ffffff;
@@ -46,7 +46,7 @@ body {
     --text-color--secondary: rgba(255, 255, 255, 0.6);
     --text-color--tertiary: rgba(255, 255, 255, 0.3);
     --text-color--link: #0077ff;
-    --image-stub: url("./image-placeholder-inverse.svg"); }
+    --image-stub: url("../img/image-placeholder-inverse.svg"); }
   .theme_color_project-warning {
     --bg-color--default: #ff3333;
     --bg-color--accent: #ffffff;
@@ -537,9 +537,13 @@ body {
     position: relative;
     bottom: 4px; }
   .text_type_h1 {
-    margin: 1.8rem 0 2.4rem; }
+    margin: 1.8rem 0 2.4rem;
+    position: relative;
+    bottom: 3px; }
   .text_type_h2 {
-    margin: 4.5rem 0 2.1rem; }
+    margin: 4.5rem 0 2.1rem;
+    position: relative;
+    bottom: 2px; }
   .text_type_h3 {
     margin: 4.2rem 0 0; }
   .text_type_p {
