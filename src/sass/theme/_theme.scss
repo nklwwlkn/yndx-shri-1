@@ -18,7 +18,7 @@
         --text-color--tertiary: rgba(0, 0, 0, 0.3);
         --text-color--link: #0077ff;
 
-        --image-stub: url("../img/image-placeholder-primary.svg");
+        --image-stub: url(image-placeholder-primary.svg);
       }
 
       &-brand {
@@ -31,7 +31,7 @@
         --text-color--tertiary: rgba(255, 255, 255, 0.3);
         --text-color--link: #ffffff;
 
-        --image-stub: url("../img/image-placeholder-inverse.svg");
+        --image-stub: url(image-placeholder-inverse.svg);
       }
 
       &-inverse {
@@ -44,7 +44,7 @@
         --text-color--tertiary: rgba(255, 255, 255, 0.3);
         --text-color--link: #0077ff;
 
-        --image-stub: url("../img/image-placeholder-inverse.svg");
+        --image-stub: url(image-placeholder-inverse.svg);
       }
 
       &-warning {
